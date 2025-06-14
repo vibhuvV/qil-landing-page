@@ -1,0 +1,22 @@
+<%
+    const baseClass = "py-20 scroll-mt-16"
+    const variants = {
+        "primary": "bg-background",
+        "accent": "bg-accent",
+    }
+%>
+
+<section id="<%= id %>" class="<%= baseClass + ' ' + variants[variant] + ' ' + attributes.class || ''  %>">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-neutral-900 mb-4">
+            <%= heading %>
+          </h2>
+          <p class="text-neutral-600 max-w-2xl mx-auto">
+            <%= text %>
+          </p>
+        </div>
+
+        <%- content %>
+    </div>
+</section>

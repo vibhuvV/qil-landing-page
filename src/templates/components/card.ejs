@@ -1,0 +1,14 @@
+<%
+    const baseClass = "rounded-xl";
+    const variants = {
+        "primary": "bg-card",
+        "accent": "bg-accent",
+    }
+%>
+
+<div class="<%= baseClass + ' ' + variants[attributes.variant || 'primary'] + ' ' + attributes.class || ''  %>">
+  <%- icon %>
+  <h3 class="text-xl font-bold text-card-foreground mb-4"><%= heading %></h3>
+  <p class="text-neutral-600"><%= text %></p>
+  <%- optional.footer %>
+</div>

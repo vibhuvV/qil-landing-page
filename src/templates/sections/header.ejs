@@ -1,0 +1,41 @@
+ <header id="navbar" class="sticky top-0 w-full z-50 bg-background/80 backdrop-blur-sm shadow-md">
+    <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+        <a href="#hero" class="text-2xl font-bold text-primary">
+            <img src="/logo.svg" class="h-11" />
+        </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+        <a href="#features" class="hover:text-primary transition-colors duration-300">Features</a>
+        <a href="#learningMaterials" class="hover:text-primary transition-colors duration-300">Learning</a>
+        <a href="#analytics" class="hover:text-primary transition-colors duration-300">Analytics</a>
+        <a href="#pricing" class="hover:text-primary transition-colors duration-300">Pricing</a>
+        <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+        <button id="menu-btn" class="text-black cursor-pointer focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <div class="flex flex-col space-y-4">
+        <a href="#features" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Features</a>
+        <a href="#learningMaterials" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Learning</a>
+        <a href="#testGenerator" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Test Gen</a>
+        <a href="#analytics" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Analytics</a>
+        <a href="#pricing" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Pricing</a>
+        <a href="#contact" class="text-gray-300 hover:text-purple-500 transition-colors duration-300">Contact</a>
+        </div>
+    </div>
+    </nav>
+</header>

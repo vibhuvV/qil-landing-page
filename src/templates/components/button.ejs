@@ -1,0 +1,19 @@
+<%
+    const baseClass = "px-8 py-3 inline-flex items-center justify-center whitespace-nowrap rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 cursor-pointer";
+    const variants = {
+        "primary": "bg-primary text-primary-foreground shadow hover:bg-primary/80",
+        "primary-outlined": "text-primary border border-primary shadow hover:bg-primary/10",
+        "primary-outlined-solid": "text-primary bg-background border border-primary shadow hover:bg-accent hover:text-accent-foreground",
+        "outlined": "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+    }
+%>
+
+<% if(attributes.type === "link") { %>
+  <a class="<%= baseClass + ' ' + variants[variant] + ' ' + attributes.class || ''  %>" href="<%= attributes.href %>">
+        <%= children %>
+    </a>
+<% } else { %>
+     <button class="<%= baseClass + ' ' + variants[variant] + ' ' + attributes.class || '' %>" onclick="<%= attributes.onclick %>" type="<%= attributes.type || 'button' %>">
+        <%= children %>
+    </button>
+<% } %>

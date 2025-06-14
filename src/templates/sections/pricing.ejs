@@ -1,0 +1,155 @@
+<section id="pricing" class="py-20 bg-accent">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-accent-foreground mb-4">
+        Choose Your Plan
+      </h2>
+      <p class="text-muted-foreground max-w-2xl mx-auto">
+        Select the perfect plan that suits your learning needs
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Basic Plan -->
+      <div  class="bg-background shadow-md rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold text-accent-foreground mb-4">Basic</h3>
+          <div class="flex justify-center items-baseline">
+            <span class="text-5xl font-extrabold text-accent-foreground">$19</span>
+            <span class="text-muted-foreground ml-2">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Access to Learning Materials
+          </li>
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Basic Test Generator
+          </li>
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Limited Analytics
+          </li>
+        </ul>
+        <%- include('src/templates/components/button.ejs',
+          {
+              variant: "primary",
+              children: "Contact Sales",
+              attributes: {
+                  type: "link",
+                  href: "#features",
+                  class: "w-full"
+              }
+          }
+        ) %>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="bg-primary shadow-xl rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300 relative">
+        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <span class="bg-yellow-400 text-neutral-900 px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+        </div>
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold text-primary-foreground mb-4">Pro</h3>
+          <div class="flex justify-center items-baseline">
+            <span class="text-5xl font-extrabold text-primary-foreground">$39</span>
+            <span class="text-purple-200 ml-2">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="font-medium flex items-center text-primary-foreground">
+            <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            All Basic Features
+          </li>
+          <li class="font-medium flex items-center text-primary-foreground">
+            <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Advanced Test Generator
+          </li>
+          <li class="font-medium flex items-center text-primary-foreground">
+            <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Full Analytics Dashboard
+          </li>
+          <li class="font-medium flex items-center text-primary-foreground">
+            <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Performance Tracking
+          </li>
+        </ul>
+        <%- include('src/templates/components/button.ejs',
+          {
+              variant: "primary-outlined-solid",
+              children: "Get Started",
+              attributes: {
+                  type: "link",
+                  href: "#features",
+                  class: "w-full"
+              }
+          }
+        ) %>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div  class="bg-background shadow-md rounded-xl p-8 hover:transform hover:scale-105 transition-all duration-300">
+        <div class="text-center mb-8">
+          <h3 class="text-xl font-bold text-accent-foreground mb-4">Enterprise</h3>
+          <div class="flex justify-center items-baseline">
+            <span class="text-5xl font-extrabold text-accent-foreground">$99</span>
+            <span class="text-muted-foreground ml-2">/month</span>
+          </div>
+        </div>
+        <ul class="space-y-4 mb-8">
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            All Pro Features
+          </li>
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Custom Question Bank
+          </li>
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Priority Support
+          </li>
+          <li class="font-medium flex items-center text-muted-foreground">
+            <svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            API Access
+          </li>
+        </ul>
+        <%- include('src/templates/components/button.ejs',
+          {
+              variant: "primary",
+              children: "Contact Sales",
+              attributes: {
+                  type: "link",
+                  href: "#features",
+                  class: "w-full"
+              }
+          }
+        ) %>
+      </div>
+    </div>
+  </div>
+</section>
