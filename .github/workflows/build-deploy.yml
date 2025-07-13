@@ -56,7 +56,7 @@ jobs:
 
       - name: Remove unwanted directories
         run: |
-          rm -r dist/*
+          rm -r dist
 
       - name: Add 404 page
         run: |
