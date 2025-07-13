@@ -58,10 +58,6 @@ jobs:
         run: |
           rm -r dist
 
-      - name: Add 404 page
-        run: |
-          cp 404.html ./build/client/404.html
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
