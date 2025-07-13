@@ -50,6 +50,8 @@ jobs:
 
       - name: Move static files for deplopyment
         run: |
+          mkdir build
+          mkdir build/client
           mv dist/* build/client
 
       - name: Remove unwanted directories
