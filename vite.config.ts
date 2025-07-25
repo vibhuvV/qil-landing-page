@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     // With Data
     ViteEjsPlugin({
-      domain: "Quantum Imaging Labs",
+      domain: "Quantum Imaging Lab",
       title: "Home",
       ejs,
     }),
